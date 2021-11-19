@@ -1,0 +1,38 @@
+{
+	"contracts": {
+		"SimpleStorage.sol": {
+			"SimpleStorage": {
+				"abi": [
+					{
+						"inputs": [],
+						"name": "retrieve",
+						"outputs": [
+							{ "internalType": "uint256", "name": "", "type": "uint256" }
+						],
+						"stateMutability": "view",
+						"type": "function"
+					},
+					{
+						"inputs": [
+							{ "internalType": "uint256", "name": "num", "type": "uint256" }
+						],
+						"name": "store",
+						"outputs": [],
+						"stateMutability": "nonpayable",
+						"type": "function"
+					}
+				],
+				"evm": {
+					"bytecode": {
+						"linkReferences": {},
+						"object": "608060405234801561001057600080fd5b5060c78061001f6000396000f3fe6080604052348015600f57600080fd5b506004361060325760003560e01c80632e64cec11460375780636057361d146053575b600080fd5b603d607e565b6040518082815260200191505060405180910390f35b607c60048036036020811015606757600080fd5b81019080803590602001909291905050506087565b005b60008054905090565b806000819055505056fea2646970667358221220e9f4282068eb68ee51875cf4c08c261844bb39e6e611bdf6457f5b8098b2257864736f6c63430006000033",
+						"opcodes": "PUSH1 0x80 PUSH1 0x40 MSTORE CALLVALUE DUP1 ISZERO PUSH2 0x10 JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST POP PUSH1 0xC7 DUP1 PUSH2 0x1F PUSH1 0x0 CODECOPY PUSH1 0x0 RETURN INVALID PUSH1 0x80 PUSH1 0x40 MSTORE CALLVALUE DUP1 ISZERO PUSH1 0xF JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST POP PUSH1 0x4 CALLDATASIZE LT PUSH1 0x32 JUMPI PUSH1 0x0 CALLDATALOAD PUSH1 0xE0 SHR DUP1 PUSH4 0x2E64CEC1 EQ PUSH1 0x37 JUMPI DUP1 PUSH4 0x6057361D EQ PUSH1 0x53 JUMPI JUMPDEST PUSH1 0x0 DUP1 REVERT JUMPDEST PUSH1 0x3D PUSH1 0x7E JUMP JUMPDEST PUSH1 0x40 MLOAD DUP1 DUP3 DUP2 MSTORE PUSH1 0x20 ADD SWAP2 POP POP PUSH1 0x40 MLOAD DUP1 SWAP2 SUB SWAP1 RETURN JUMPDEST PUSH1 0x7C PUSH1 0x4 DUP1 CALLDATASIZE SUB PUSH1 0x20 DUP2 LT ISZERO PUSH1 0x67 JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST DUP2 ADD SWAP1 DUP1 DUP1 CALLDATALOAD SWAP1 PUSH1 0x20 ADD SWAP1 SWAP3 SWAP2 SWAP1 POP POP POP PUSH1 0x87 JUMP JUMPDEST STOP JUMPDEST PUSH1 0x0 DUP1 SLOAD SWAP1 POP SWAP1 JUMP JUMPDEST DUP1 PUSH1 0x0 DUP2 SWAP1 SSTORE POP POP JUMP INVALID LOG2 PUSH5 0x6970667358 0x22 SLT KECCAK256 0xE9 DELEGATECALL 0x28 KECCAK256 PUSH9 0xEB68EE51875CF4C08C 0x26 XOR DIFFICULTY 0xBB CODECOPY 0xE6 0xE6 GT 0xBD 0xF6 GASLIMIT PUSH32 0x5B8098B2257864736F6C63430006000033000000000000000000000000000000 ",
+						"sourceMap": "137:361:0:-:0;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;137:361:0;;;;;;;"
+					}
+				},
+				"metadata": "{\"compiler\":{\"version\":\"0.6.0+commit.26b70077\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"name\":\"retrieve\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"num\",\"type\":\"uint256\"}],\"name\":\"store\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"details\":\"Store & retrieve value in a variable\",\"methods\":{\"retrieve()\":{\"details\":\"Return value\",\"returns\":{\"_0\":\"value of 'number'\"}},\"store(uint256)\":{\"details\":\"Store value in variable\",\"params\":{\"num\":\"value to store\"}}},\"title\":\"Storage\"},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"SimpleStorage.sol\":\"SimpleStorage\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"SimpleStorage.sol\":{\"keccak256\":\"0x68f765372b48a75cb5bf31d9bc42b13ef58af9c3f0fb14aa801462855680446b\",\"urls\":[\"bzz-raw://381ea740b47e4fa5adc12a448777085fff16b4300d740c01aced8aa5f3f932d2\",\"dweb:/ipfs/QmQdMcxsEVfov1cZPxFnJNurKcv6vwXZaEm2NSt7Gc4giY\"]}},\"version\":1}"
+			}
+		}
+	},
+	"sources": { "SimpleStorage.sol": { "id": 0 } }
+}
